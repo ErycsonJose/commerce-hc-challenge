@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "list-context.image-list#banner"
+      "list-context.image-list#banner",
+      "search-result-layout.customQuery#showcaseProduts"
     ]
   },
   "list-context.image-list#banner":{
