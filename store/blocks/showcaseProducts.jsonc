@@ -4,7 +4,7 @@
             "querySchema": {
               "maxItemsPerPage": 10,
               "orderByField": "OrderByReleaseDateDESC",
-              "queryField": "142",
+              "queryField": "145",
               "mapField": "productClusterIds",
               "__unstableProductOriginVtex": true,
               "simulationBehavior": "skip", 
@@ -42,7 +42,7 @@
           "product-summary-image",
           "product-summary-space",
           "product-summary-price",
-          "product-summary-buy-button"
+          "add-to-cart-button"
         ]
     }
 }
