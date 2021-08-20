@@ -1,8 +1,10 @@
 
 .imageElement{
     border-radius: 20px;
+    width: 912px;
 }
 
 .caretIcon{
     color: #fff;
+    align-items: baseline;
 }
