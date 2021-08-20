@@ -14,7 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop","vtex.menu@2.x:menu#category-menu"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -56,7 +56,7 @@
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": ["flex-layout.row#mobile","vtex.menu@2.x:menu#category-menu"]
   },
   "flex-layout.row#mobile": {
     "children": [
