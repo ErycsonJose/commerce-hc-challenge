@@ -1,0 +1,35 @@
+.element{
+    background-color: #424242;
+}
+
+.image{
+    width:fit-content;
+}
+
+.productBrand{
+    font-size: 1.5rem;
+    padding: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.buyButton :global(.vtex-button){
+    background: #3eb200;
+    border: none
+}
+
+.sellingPriceContainer{
+    color: #3eb200;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+ .listPriceContainer{
+     color: #000000;
+     background: #3eb200;
+    width: fit-content;
+}
+
+.installmentContainer{
+    color: #fff;
+}
