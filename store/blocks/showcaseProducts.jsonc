@@ -2,7 +2,7 @@
     "search-result-layout.customQuery#showcaseProduts":{
         "props": {
             "querySchema": {
-              "maxItemsPerPage": 30,
+              "maxItemsPerPage": 10,
               "orderByField": "OrderByReleaseDateDESC",
               "queryField": "142",
               "mapField": "productClusterIds",
@@ -26,12 +26,15 @@
     "gallery#deafaultSearch":{
         "props":{
             "blockClass": "defaultSearch",
-            "maxItemPerRow":{
-                "desktop": 2,
-                "phone": 2
+            "layouts":[
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow":2
             }
-        },
-        "blocks":["product-summary.shelf#defaultSearch"]
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf#defaultSearch"
+        }
     },
     "product-summary.shelf#defaultSearch": {
         "children": [
