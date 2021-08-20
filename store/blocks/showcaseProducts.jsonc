@@ -2,9 +2,9 @@
     "search-result-layout.customQuery#showcaseProduts":{
         "props": {
             "querySchema": {
-              "maxItemsPerPage": 8,
+              "maxItemsPerPage": 30,
               "orderByField": "OrderByReleaseDateDESC",
-              "queryField": "139",
+              "queryField": "142",
               "mapField": "productClusterIds",
               "__unstableProductOriginVtex": true,
               "simulationBehavior": "skip", 
