@@ -3,17 +3,59 @@
      "props": {
        "items": [
         {
-         "id": "menu-item-category-electronics",
+         "id": "menu-item-category-promotion",
          "type": "custom",
          "iconId": null,
          "highlight": false,
          "itemProps": {
-           "categoryId": 153,
+           "categoryId": 142,
            "type": "internal",
-           "href": "/electronics/",
+           "href": "/",
            "noFollow": true,
-           "tagTitle": "Electronics",
-           "text": "Electronics"
+           "tagTitle": "Promotion",
+           "text": "PROMOÇÃO"
+         }
+        },
+        {
+          "id": "menu-item-category-corinthians",
+         "type": "custom",
+         "iconId": null,
+         "highlight": false,
+         "itemProps": {
+           "categoryId": 142,
+           "type": "internal",
+           "href": "/",
+           "noFollow": true,
+           "tagTitle": "Corinthians",
+           "text": "CORINTHIANS"
+         }
+        },
+        {
+          "id": "menu-item-category-palmeiras",
+         "type": "custom",
+         "iconId": null,
+         "highlight": false,
+         "itemProps": {
+           "categoryId": 142,
+           "type": "internal",
+           "href": "/",
+           "noFollow": true,
+           "tagTitle": "Palmeiras",
+           "text": "PALMEIRAS"
+         }
+        },
+        {
+          "id": "menu-item-category-signos",
+         "type": "custom",
+         "iconId": null,
+         "highlight": false,
+         "itemProps": {
+           "categoryId": 142,
+           "type": "internal",
+           "href": "/",
+           "noFollow": true,
+           "tagTitle": "Signos",
+           "text": "SIGNOS"
          }
         }
        ]
