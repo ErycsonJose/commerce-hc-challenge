@@ -1,0 +1,69 @@
+{
+    "search-result-layout.customQuery#corinthians":{
+        "props": {
+            "querySchema": {
+              "maxItemsPerPage": 10,
+              "orderByField": "OrderByReleaseDateDESC",
+              "queryField": "corinthians",
+              "mapField": "ft",
+              "__unstableProductOriginVtex": true,
+              "simulationBehavior": "skip", 
+              "skusFilter": "ALL_AVAILABLE"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#corinthians",
+            "search-result-layout.mobile#corinthians"
+          ]
+    },
+    "search-result-layout.desktop#corinthians":{
+        "children":["search-content#corinthians"],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "search-content#corinthians":{
+        "blocks":[ "gallery#corinthians","not-found" ]
+    },
+
+    "search-result-layout.mobile#corinthians": {
+        "children": [
+            "search-content#corinthians"
+        ],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "gallery#corinthians":{
+        "props":{
+            "blockClass": "corinthiansSearch",
+            "layouts":[
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow":{
+                    "(min-with:1300px)": 4,
+                    "desktop": 2,
+                    "tablet":1,
+                    "phone": 1
+                }
+            }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf#corinthiansSearch"
+        }
+    },
+    "product-summary.shelf#corinthiansSearch": {
+        "props":{
+            "blockClass":"corinthiansSearch"
+        },
+        "children": [
+        "product-summary-name",
+          "product-summary-image",
+          "product-summary-space",
+          "product-summary-price",
+          "add-to-cart-button"
+        ]
+    }
+}

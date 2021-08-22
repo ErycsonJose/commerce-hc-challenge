@@ -1,0 +1,69 @@
+{
+    "search-result-layout.customQuery#signo":{
+        "props": {
+            "querySchema": {
+              "maxItemsPerPage": 10,
+              "orderByField": "OrderByReleaseDateDESC",
+              "queryField": "sagitario",
+              "mapField": "ft",
+              "__unstableProductOriginVtex": true,
+              "simulationBehavior": "skip", 
+              "skusFilter": "ALL_AVAILABLE"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#signo",
+            "search-result-layout.mobile#signo"
+          ]
+    },
+    "search-result-layout.desktop#signo":{
+        "children":["search-content#signo"],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "search-content#signo":{
+        "blocks":[ "gallery#signo","not-found" ]
+    },
+
+    "search-result-layout.mobile#signo": {
+        "children": [
+            "search-content#signo"
+        ],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "gallery#signo":{
+        "props":{
+            "blockClass": "signoSearch",
+            "layouts":[
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow":{
+                    "(min-with:1300px)": 4,
+                    "desktop": 2,
+                    "tablet":1,
+                    "phone": 1
+                }
+            }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf#signo"
+        }
+    },
+    "product-summary.shelf#signo": {
+        "props":{
+            "blockClass":"defaultSearch"
+        },
+        "children": [
+        "product-summary-name",
+          "product-summary-image",
+          "product-summary-space",
+          "product-summary-price",
+          "add-to-cart-button"
+        ]
+    }
+}

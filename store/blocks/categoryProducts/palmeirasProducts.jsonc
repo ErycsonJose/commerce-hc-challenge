@@ -1,0 +1,69 @@
+{
+    "search-result-layout.customQuery#palmeiras":{
+        "props": {
+            "querySchema": {
+              "maxItemsPerPage": 10,
+              "orderByField": "OrderByReleaseDateDESC",
+              "queryField": "palmeiras",
+              "mapField": "ft",
+              "__unstableProductOriginVtex": true,
+              "simulationBehavior": "skip", 
+              "skusFilter": "ALL_AVAILABLE"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#palmeiras",
+            "search-result-layout.mobile#palmeiras"
+          ]
+    },
+    "search-result-layout.desktop#palmeiras":{
+        "children":["search-content#palmeiras"],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "search-content#palmeiras":{
+        "blocks":[ "gallery#palmeiras","not-found" ]
+    },
+
+    "search-result-layout.mobile#palmeiras": {
+        "children": [
+            "search-content#palmeiras"
+        ],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "gallery#palmeiras":{
+        "props":{
+            "blockClass": "palmeirasSearch",
+            "layouts":[
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow":{
+                    "(min-with:1300px)": 4,
+                    "desktop": 2,
+                    "tablet":1,
+                    "phone": 1
+                }
+            }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf#palmeiras"
+        }
+    },
+    "product-summary.shelf#palmeiras": {
+        "props":{
+            "blockClass":"palmeirasSearch"
+        },
+        "children": [
+        "product-summary-name",
+          "product-summary-image",
+          "product-summary-space",
+          "product-summary-price",
+          "add-to-cart-button"
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "search-result-layout.customQuery#promotion":{
+        "props": {
+            "querySchema": {
+              "maxItemsPerPage": 10,
+              "orderByField": "OrderByReleaseDateDESC",
+              "queryField": "upMedal",
+              "mapField": "ft",
+              "__unstableProductOriginVtex": true,
+              "simulationBehavior": "skip", 
+              "skusFilter": "ALL_AVAILABLE"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#promotion",
+            "search-result-layout.mobile#promotion"
+          ]
+    },
+    "search-result-layout.desktop#promotion":{
+        "children":["search-content#promotion"],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "search-content#promotion":{
+        "blocks":[ "gallery#promotion","not-found" ]
+    },
+
+    "search-result-layout.mobile#promotion": {
+        "children": [
+            "search-content#promotion"
+        ],
+        "props": {
+            "PreventRouteChange": true
+        }
+    },
+
+    "gallery#promotion":{
+        "props":{
+            "blockClass": "promotionSearch",
+            "layouts":[
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow":{
+                    "(min-with:1300px)": 4,
+                    "desktop": 2,
+                    "tablet":1,
+                    "phone": 1
+                }
+            }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf#promotion"
+        }
+    },
+    "product-summary.shelf#promotion": {
+        "props":{
+            "blockClass":"promotionSearch"
+        },
+        "children": [
+            "product-summary-name",
+            "product-images",
+            "product-summary-space",
+            "product-summary-price",
+            "add-to-cart-button"
+        ]
+    }
+}
