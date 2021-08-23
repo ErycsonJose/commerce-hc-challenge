@@ -7,15 +7,10 @@
 }
 
 .productBrand{
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 1.25rem;
+    padding:20px;
     font-weight: 400;
     color: #fff;
-}
-
-:global(.vtex-button){
-    background: #3eb200;
-    border: none
 }
 
 .sellingPriceContainer{
