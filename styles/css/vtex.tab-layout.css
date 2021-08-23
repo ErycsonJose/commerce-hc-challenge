@@ -1,3 +1,14 @@
 .listContainer{
     background: #212121;
 }
+
+.listItem:global(.vtex-button){
+    background: #212121;
+}
+
+:global(.vtex-button__label){
+    color: #fff;
+}
+.contentItem{
+    margin: 10% 0 ;
+}
